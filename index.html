@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- meta要素を追加する。これらのmeta要素は、「文字化け」やレイアウトの崩れを防止する。-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Webページのタイトルを設定する。-->
+        <title> ToDoアプリを作ろう！ - ドリームフェスタ2024 都立科学技術高校ブース★ </title>
+        <!-- CSSファイルを読み込む。-->
+        <link rel="stylesheet" href="./styles/index.css" />
+        <!-- JavaScriptファイルを読み込む。動きを付ける。-->
+        <script src="./scripts/index.js"></script>
+        <!-- Google Fontsを読み込む。-->
+        <!-- 文字を見やすくするためにも、既存フォントよりも見やすい NotoSans JPを選んだ。他のでもよいし、指定しなくてもよい。-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body class="todo-app">
+        <h1 class="title"> My self ToDos </h1>
+        <div class="container">
+            <div class="input-area">
+                <input type="text" id="input-todo" class="todo-input" placeholder="タスクを入力してください">
+                <button class="todo-btn add" id="add-todo"> 追加 </button>
+            </div>
+            <div class="todos" id="todos">
+            </div>
+    </body>
+</html>

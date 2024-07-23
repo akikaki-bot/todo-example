@@ -1,0 +1,114 @@
+
+
+html {
+    height: 100vh;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.todo-app {
+    display: flex
+    flex-direction: column;
+    background-color : #f5f5f5;
+    height : 100%
+    width : 100%
+    padding : 1em;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.title {
+    display : flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-area {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.todos {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.todo {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    justify-content: start;
+}
+
+.todo-input {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.todo-btn {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.add {
+    background-color: #4444cc;
+    color: white;
+}
+
+.end:hover,
+.end:focus {
+    background-color: #3333cc;
+}
+
+.end {
+    background-color: #44dd44;
+    color: white;
+}
+
+.end:hover,
+.end:focus {
+    background-color: #33cc33;
+}
+
+@media (min-width: 768px) {
+    .todo-app {
+        width: 50%;
+        margin: auto;
+    }
+}
